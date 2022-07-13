@@ -14,7 +14,7 @@ const Footer = () => {
         <FooterSection>
             <FooterLinks>
                 <FooterLink href="#" target="_blank" rel="noreferrer">Privacy Policy</FooterLink>
-                <FooterLink href="mailto:support@sade.network" target="_blank" rel="noreferrer">Contact</FooterLink>
+                <FooterLink href="mailto:info@sade.network" target="_blank" rel="noreferrer">Contact</FooterLink>
             </FooterLinks>
 
             <FooterCopyright>
