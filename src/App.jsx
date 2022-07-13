@@ -1,16 +1,19 @@
+import React from "react";
 import Navbar from 'components/Navbar/Navbar';
 import Landing from 'components/Landing/Landing';
 import AboutUs from "components/AboutUs/AboutUs";
 import Team from "components/Team/Team";
+import Footer from "components/Footer/Footer";
 
 const App = () => {
     return (
-        <div>
+        <React.Fragment>
             <Navbar/>
             <Landing/>
             <AboutUs/>
             <Team/>
-        </div>
+            <Footer/>
+        </React.Fragment>
     );
 }
 
