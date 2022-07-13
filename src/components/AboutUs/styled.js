@@ -6,18 +6,11 @@ export const AboutContent = styled.section`
   border-bottom: 1px solid var(--dividerColor);
 `;
 
-export const AboutTitle = styled.h1`
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 60px;
-  letter-spacing: 0.02em;
-`;
-
 export const AboutBtnContent = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
 `;
 
 export const AboutBtn = styled.button`

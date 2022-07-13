@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {AboutBtn, AboutBtnContent, AboutContent, AboutText, AboutTitle} from "components/AboutUs/styled";
-import {ColFull, Container, Row} from "assets/style/style";
+import {AboutBtn, AboutBtnContent, AboutContent, AboutText} from "components/AboutUs/styled";
+import {ColFull, Container, Row, SectionRows, SectionTitle} from "assets/style/style";
 
 const about = [
     {
@@ -23,18 +23,19 @@ const AboutUs = () => {
     return (
         <AboutContent>
             <Container>
-                <Row style={{marginBottom: "1rem"}}>
+                <SectionRows>
                     <ColFull>
-                        <AboutTitle>About Us</AboutTitle>
+                        <SectionTitle>About Us</SectionTitle>
                     </ColFull>
-                </Row>
-                <Row style={{marginBottom: "1rem"}}>
+                </SectionRows>
+                <SectionRows>
                     <AboutBtnContent>
                         {about.map((item, index) => (
-                            <AboutBtn key={index} className={activeItem === index && 'active'} onClick={() => setActiveItem(index)}>{item.title}</AboutBtn>
+                            <AboutBtn key={index} className={activeItem === index && 'active'}
+                                      onClick={() => setActiveItem(index)}>{item.title}</AboutBtn>
                         ))}
                     </AboutBtnContent>
-                </Row>
+                </SectionRows>
                 <Row>
                     <AboutText>{about[activeItem].content}</AboutText>
                 </Row>
