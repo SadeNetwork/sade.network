@@ -74,14 +74,8 @@ export const NavSocial = styled.a`
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
-  width: 20px;
-  height: 20px;
+  color: #fff;
   &:hover {
     transform: scale(1.2);
   }
-`;
-
-export const NavSocialIcon = styled.img`
-  width: 100%;
-  height: 100%;
 `;

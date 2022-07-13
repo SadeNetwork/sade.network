@@ -1,7 +1,4 @@
-import {Nav, NavLink, NavLinks, NavSocial, NavSocialIcon, NavSocials} from "./styled";
-import github from 'assets/img/github.svg'
-import linkedin from 'assets/img/linkedin.svg'
-import twitter from 'assets/img/twitter.svg'
+import {Nav, NavLink, NavLinks, NavSocial, NavSocials} from "./styled";
 
 const Navbar = () => {
     return (
@@ -13,13 +10,13 @@ const Navbar = () => {
             </NavLinks>
             <NavSocials>
                 <NavSocial href="https://github.com/SadeNetwork" target="_blank" rel="noreferrer">
-                    <NavSocialIcon src={github}/>
+                    <i className="fa-brands fa-github"/>
                 </NavSocial>
                 <NavSocial href="https://www.linkedin.com/company/sadenetwork/" target="_blank" rel="noreferrer">
-                    <NavSocialIcon src={linkedin}/>
+                    <i className="fa-brands fa-linkedin-in"/>
                 </NavSocial>
                 <NavSocial href="https://twitter.com/SadeNetworkUS" target="_blank" rel="noreferrer">
-                    <NavSocialIcon src={twitter}/>
+                    <i className="fa-brands fa-twitter"/>
                 </NavSocial>
             </NavSocials>
         </Nav>
