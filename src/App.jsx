@@ -5,16 +5,18 @@ import AboutUs from 'components/AboutUs/AboutUs';
 import Team from 'components/Team/Team';
 import Footer from 'components/Footer/Footer';
 import {useSelector} from "react-redux";
-import {getTeam} from "./firebase";
+import {getAbout, getTeam} from "./firebase";
 
 const App = () => {
     const {team} = useSelector(state => state.team)
+    const content = useSelector(state => state.about)
 
     useEffect(() => {
         getTeam();
+        getAbout();
     }, [])
 
-    if(team.length === 0) return <p>Loading...</p>
+    if(team.length === 0 || content.length === 0) return <p>Loading...</p>
     return (
         <React.Fragment>
             <Navbar/>

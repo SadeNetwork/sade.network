@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TeamContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
   flex-wrap: wrap;
   margin: 0 auto;

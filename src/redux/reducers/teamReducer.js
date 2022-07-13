@@ -14,7 +14,6 @@ export const team = createSlice({
     },
 })
 
-// Action creators are generated for each case reducer function
 export const {setTeam} = team.actions
 
 export default team.reducer

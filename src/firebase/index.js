@@ -3,6 +3,7 @@ import {getAnalytics} from "firebase/analytics";
 import {collection, getDocs, getFirestore, onSnapshot, orderBy, query} from "firebase/firestore";
 import {store} from "redux/store";
 import {setTeam} from "redux/reducers/teamReducer";
+import {setAbout} from "redux/reducers/aboutReducer";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -16,15 +17,25 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-export const db = getFirestore(app);
+const db = getFirestore(app);
 
 const teamRef = collection(db, "team");
+const aboutRef = collection(db, "about");
 
 onSnapshot(query(teamRef, orderBy('order', 'asc')), async (snapshot) => {
     store.dispatch(setTeam(snapshot.docs.map(doc => ({...doc.data(), id: doc.id}))))
 });
 
+onSnapshot(aboutRef, async (snapshot) => {
+    store.dispatch(setAbout(snapshot.docs.map(doc => ({...doc.data(), id: doc.id}))))
+});
+
 export const getTeam = async () => {
     const data = await getDocs(query(teamRef, orderBy("order", "asc")));
     store.dispatch(setTeam(data.docs.map(doc => ({...doc.data(), id: doc.id}))))
+}
+
+export const getAbout = async () => {
+    const data = await getDocs(aboutRef);
+    store.dispatch(setAbout(data.docs.map(doc => ({...doc.data(), id: doc.id}))))
 }

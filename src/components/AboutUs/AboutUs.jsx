@@ -1,23 +1,10 @@
 import React, {useState} from "react";
 import {AboutBtn, AboutBtnContent, AboutText} from "components/AboutUs/styled";
 import {ColFull, Container, Row, SectionContainer, SectionRows, SectionTitle} from "assets/style/style";
-
-const about = [
-    {
-        title: 'About Us',
-        content: 'Sade Network is a team established on 1 July 2019 in North Cyprus.'
-    },
-    {
-        title: 'Our Mission',
-        content: 'Our mission is to achieve quality work, to make useful, usable programs/applications/projects.'
-    },
-    {
-        title: 'Our Vision',
-        content: 'Our vision is to achieve quality work and provide our users with the best service, in the best possible way and free of charge.'
-    }
-]
+import {useSelector} from "react-redux";
 
 const AboutUs = () => {
+    const about = useSelector(state => state.about.content);
     const [activeItem, setActiveItem] = useState(0);
 
     return (
