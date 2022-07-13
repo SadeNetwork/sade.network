@@ -36,10 +36,16 @@ export const NavLinks = styled.ul`
 
 export const NavLink = styled.a`
   text-decoration: none;
-  color: #fff;
+  color: #ccc;
   font-size: 16px;
   font-weight: 400;
   padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+  
+  &:hover{
+   color: #ecf0f1; 
+  }
+  
   @media only screen and (max-width: 600px) {
     font-size: 13px;
   }
