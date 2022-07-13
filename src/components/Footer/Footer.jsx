@@ -8,7 +8,6 @@ import {
     Logo,
     Sade
 } from "components/Footer/styled";
-import SadeLogo from 'assets/img/sadelogo.png';
 
 const Footer = () => {
     return (
@@ -20,7 +19,7 @@ const Footer = () => {
 
             <FooterCopyright>
                 <FooterBrand>
-                    <Logo src={SadeLogo}/>
+                    <Logo src="https://cdn.sade.network/img/sade.png"/>
                     <Sade>Sade</Sade>
                 </FooterBrand>
 
