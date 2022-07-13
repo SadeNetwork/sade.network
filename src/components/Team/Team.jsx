@@ -22,7 +22,7 @@ const Team = () => {
                 <Row>
                     <TeamContainer>
                         {
-                            members.map((member, index) => (
+                            members?.map((member, index) => (
                                 <TeamMember key={index}>
                                     <TeamMemberImage src={member.image} alt={`${member.name} image`}/>
                                     <TeamMemberName>{member.name}</TeamMemberName>

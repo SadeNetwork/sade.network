@@ -17,14 +17,14 @@ const AboutUs = () => {
                 </SectionRows>
                 <SectionRows>
                     <AboutBtnContent>
-                        {about.map((item, index) => (
+                        {about?.map((item, index) => (
                             <AboutBtn key={index} className={activeItem === index && 'active'}
                                       onClick={() => setActiveItem(index)}>{item.title}</AboutBtn>
                         ))}
                     </AboutBtnContent>
                 </SectionRows>
                 <Row>
-                    <AboutText>{about[activeItem].content}</AboutText>
+                    <AboutText>{about?.[activeItem]?.content}</AboutText>
                 </Row>
             </Container>
         </SectionContainer>
