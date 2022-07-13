@@ -15,14 +15,13 @@ export const Nav = styled.nav`
   border-color: hsla(0, 0%, 100%, .1);
   border-style: solid;
   background-color: rgb(0 0 0/0.2);
+  
   @media only screen and (max-width: 600px) {
-    padding: 20px 0;
-    margin-bottom: 2rem;
+    padding: 20px 10px;
   }
   
   @media only screen and (min-width: 600px) {
-    padding: 20px 0;
-    margin-bottom: 2rem;
+    padding: 20px 10px;
   }
   @media only screen and (min-width: 800px) {
     padding: 20px 138px;

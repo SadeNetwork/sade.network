@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const LandingContent = styled.section`
-  height: 70vh;
+  height: calc(100vh - 82px);
   display: flex;
   align-items: center;
   justify-content: center;
