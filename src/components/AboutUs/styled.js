@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-export const AboutContent = styled.section`
-  margin: 2rem 0;
-  padding: 3rem 2rem;
-  border-bottom: 1px solid var(--dividerColor);
-`;
-
 export const AboutBtnContent = styled.div`
   display: flex;
   align-items: center;

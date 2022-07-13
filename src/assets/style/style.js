@@ -1,12 +1,5 @@
 import styled from "styled-components";
 
-export const All = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
 export const Container = styled.div`
   width: 100%;
   margin-right: auto;
@@ -40,23 +33,6 @@ export const ColFifty = styled.div`
     max-width: 48%;
   }
 `
-
-export const ColThird = styled.div`
-  width: 100%;
-  max-width: 32%;
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @media only screen and (min-width: 600px) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @media only screen and (min-width: 1200px) {
-    width: 100%;
-    max-width: 32%;
-  }
-`;
 
 export const ColFull = styled.div`
   width: 100%;
@@ -100,7 +76,7 @@ export const BgExperience = styled(Bg)`
   top: 5rem;
   right: 50%;
   transform: translateX(50%);
-  width: 100%;
+  width: 50%;
   height: 100%;
   filter: blur(700px);
 `;
@@ -144,4 +120,10 @@ export const SectionTitle = styled.h1`
   font-size: 40px;
   line-height: 60px;
   letter-spacing: 0.02em;
+`;
+
+export const SectionContainer = styled.section`
+  margin: 2rem 0;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid var(--dividerColor);
 `;

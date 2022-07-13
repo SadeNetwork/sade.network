@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import {AboutBtn, AboutBtnContent, AboutContent, AboutText} from "components/AboutUs/styled";
-import {ColFull, Container, Row, SectionRows, SectionTitle} from "assets/style/style";
+import {AboutBtn, AboutBtnContent, AboutText} from "components/AboutUs/styled";
+import {ColFull, Container, Row, SectionContainer, SectionRows, SectionTitle} from "assets/style/style";
 
 const about = [
     {
@@ -21,7 +21,7 @@ const AboutUs = () => {
     const [activeItem, setActiveItem] = useState(0);
 
     return (
-        <AboutContent>
+        <SectionContainer>
             <Container>
                 <SectionRows>
                     <ColFull>
@@ -40,7 +40,7 @@ const AboutUs = () => {
                     <AboutText>{about[activeItem].content}</AboutText>
                 </Row>
             </Container>
-        </AboutContent>
+        </SectionContainer>
     )
 }
 
