@@ -7,6 +7,7 @@ export const LandingContent = styled.section`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
+  border-bottom: 1px solid var(--dividerColor);
 `;
 
 export const LandingTitle = styled.h1`

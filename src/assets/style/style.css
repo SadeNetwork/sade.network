@@ -4,6 +4,7 @@
     --primaryColor: #5C24FF;
     --primaryGradient: linear-gradient(90deg, #FF3BFF 0%, #ECBFBF 38.02%, #5C24FF 75.83%, #D94FD5 100%);
     --secondaryGradient: linear-gradient(90deg, #3BFFFF 0%, #BFC9EC 38.02%, #8424FF 75.52%, #52D94F 100%);
+    --dividerColor: #3e3e3e;
 
 }
 
