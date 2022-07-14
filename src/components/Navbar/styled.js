@@ -15,17 +15,21 @@ export const Nav = styled.nav`
   border-color: hsla(0, 0%, 100%, .1);
   border-style: solid;
   background-color: rgb(0 0 0/0.2);
-  
+
   @media only screen and (max-width: 600px) {
     padding: 20px 10px;
   }
-  
+
   @media only screen and (min-width: 600px) {
     padding: 20px 10px;
   }
   @media only screen and (min-width: 800px) {
     padding: 20px 138px;
   }
+`;
+
+export const SadeText = styled.a`
+  color: #fff;
 `;
 
 export const NavLinks = styled.ul`
@@ -40,11 +44,11 @@ export const NavLink = styled.a`
   font-weight: 400;
   padding: 0.5rem 1rem;
   transition: color 0.2s ease-in-out;
-  
-  &:hover{
-   color: #ecf0f1; 
+
+  &:hover {
+    color: #ecf0f1;
   }
-  
+
   @media only screen and (max-width: 600px) {
     font-size: 13px;
   }
@@ -75,6 +79,7 @@ export const NavSocial = styled.a`
   transition: all 0.3s ease-in-out;
   font-size: 16px;
   color: #fff;
+
   &:hover {
     transform: scale(1.2);
   }

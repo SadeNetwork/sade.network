@@ -13,7 +13,7 @@ const Team = () => {
     const members = useSelector(state => state.team.team);
 
     return (
-        <SectionContainer style={{position: 'relative'}}>
+        <SectionContainer style={{position: 'relative'}} id="team">
             <BgExperience/>
             <Container>
                 <SectionRows>

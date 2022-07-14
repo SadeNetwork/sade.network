@@ -8,7 +8,7 @@ const AboutUs = () => {
     const [activeItem, setActiveItem] = useState(0);
 
     return (
-        <SectionContainer>
+        <SectionContainer id="about">
             <Container>
                 <SectionRows>
                     <ColFull>

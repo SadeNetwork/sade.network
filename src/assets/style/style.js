@@ -12,28 +12,6 @@ export const Row = styled.div`
   gap: 1rem;
 `;
 
-export const ColFifty = styled.div`
-  width: 100%;
-  max-width: 48%;
-  ${props => props.center && `
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  `};
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @media only screen and (min-width: 600px) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @media only screen and (min-width: 800px) {
-    width: 100%;
-    max-width: 48%;
-  }
-`
-
 export const ColFull = styled.div`
   width: 100%;
   max-width: 100%;

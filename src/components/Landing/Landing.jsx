@@ -9,8 +9,8 @@ const Landing = () => {
             <LandingTitle>Sade Network</LandingTitle>
             <LandingSubtitle>new revolution.</LandingSubtitle>
             <Cta>
-                <GradientButton>Learn More</GradientButton>
-                <Button>Our Team</Button>
+                <a href="#about"><GradientButton>Learn More</GradientButton></a>
+                <a href="#team"><Button>Our Team</Button></a>
             </Cta>
         </LandingContent>
     )

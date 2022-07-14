@@ -1,12 +1,12 @@
-import {Nav, NavLink, NavLinks, NavSocial, NavSocials} from "./styled";
+import {Nav, NavLink, NavLinks, NavSocial, NavSocials, SadeText} from "./styled";
 
 const Navbar = () => {
     return (
         <Nav>
-            <p>Sade</p>
+            <SadeText href="#">Sade</SadeText>
             <NavLinks>
-                <NavLink href='#'>About Us</NavLink>
-                <NavLink href='#'>Team</NavLink>
+                <NavLink href='#about'>About Us</NavLink>
+                <NavLink href='#team'>Team</NavLink>
             </NavLinks>
             <NavSocials>
                 <NavSocial href="https://github.com/SadeNetwork" target="_blank" rel="noreferrer">
