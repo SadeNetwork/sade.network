@@ -22,6 +22,7 @@ export const TeamMember = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  width: 200px;
 `;
 
 export const TeamMemberImage = styled.img`
